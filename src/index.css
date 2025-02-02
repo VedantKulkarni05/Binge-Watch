@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -13,7 +11,7 @@
 
   --color-dark-100: #0f0d23;
 
-  --font-dm-sans: DM Sans, sans-serif;
+  --font-dm-sans: Montserrat, sans-serif;
 
   --breakpoint-xs: 480px;
 
@@ -22,7 +20,7 @@
 
 @layer base {
   body {
-    font-family: "DM Sans", serif;
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     background: #030014;
   }
@@ -77,7 +75,7 @@
     }
   }
 
-  .search {
+  .searchBar {
     @apply w-full bg-light-100/5 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
 
     & div {
@@ -149,7 +147,7 @@
 @utility fancy-text {
   -webkit-text-stroke: 5px rgba(206, 206, 251, 0.5);
   font-size: 190px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @utility hide-scrollbar {

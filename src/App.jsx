@@ -1,4 +1,10 @@
+import Search from "./components/search.jsx";
+import { useEffect, useState } from "react";
 const App = () => {
+  const [SearchT, setSearchT] = useState("");
+
+  useEffect(() => {}, []);
+
   return (
     <main>
       <div className="design" />
@@ -13,7 +19,8 @@ const App = () => {
             Without the Hassle
           </h1>
         </header>
-        <p>Search</p>
+        <Search SearchT={SearchT} setSearchT={setSearchT} />
+        <h1 className="text-white">{SearchT}</h1>
       </div>
     </main>
   );
